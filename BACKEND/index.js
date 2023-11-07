@@ -11,7 +11,7 @@ app.use(express.json());
 // mdalmamunit427
 // arYcNetNKnJWDMGx
 
-const uri = 'mongodb+srv://krsarita:Kissu@111@cluster0.esokis0.mongodb.net/?retryWrites=true&w=majority';
+const uri = 'mongodb+srv://krsarita:kissu111@cluster0.esokis0.mongodb.net/?retryWrites=true&w=majority';
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
@@ -26,9 +26,10 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+    console.log("hello bookshelf");
 
-    const database = client.db("usersDB");
-    const usersCollection = database.collection("users");
+    const database = client.db("bookstore");
+    const usersCollection = database.collection("bookself");
 
     app.get('/users', async (req, res) => {
         const cursor = usersCollection.find();

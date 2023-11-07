@@ -4,7 +4,7 @@ import App from "../App";
 import { Home } from "../pages/Home/Home";
 import Shop from "../pages/Shop/Shop";
 import { DashboardLayout } from "../Dashboard/DashboardLayout";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import PrivateRoute from "../routers/PrivateRoute";
 import Login from "../pages/Login";
 import SignleBook from "../pages/shared/SignleBook";
 import UploadBook from "../Dashboard/UploadBook";

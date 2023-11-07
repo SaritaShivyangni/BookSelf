@@ -1,8 +1,8 @@
 import React, { useContext, useState } from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contexts/AuthProvider';
-import googleLogo from '../assets/google-logo.svg'
-import fbLogo from '../assets/facebook-log.svg'
+import googleLogo from '../assets/google-logo.svg';
+import fbLogo from '../assets/facebook-log.svg';
 
 export default function Login() {
 
